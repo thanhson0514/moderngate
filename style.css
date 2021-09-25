@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.topbar_title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+
+.topbar_title img {
+    height: 54px;
+    width: 54px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.topbar_title h1 {
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+    user-select: none;
+}
+
+.topbar_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #9e3fd4;
+}
+
+.topbar_list ul {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.topbar_list ul li {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.topbar_list ul li a {
+    color: #ccc;
+    text-decoration: none;
+    animation: 1s ease-in-out;
+    text-transform: uppercase;
+}
+
+.topbar_list ul li a:hover {
+    color: #fff;
+}
+
+
+.container_main {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
