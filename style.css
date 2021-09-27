@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
 }
 
 .container {
@@ -14,35 +23,50 @@
 
 .topbar {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    background-image: url('./img/background.jpg'), linear-gradient(135deg, rgba(255,255,218, .3), rgba(255,255,218,.8));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 100vh;
+}
+
+.topbar_head {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .15);
 }
 
 .topbar_title {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    position: relative;
     width: 100%;
     padding: 10px;
 }
 
 .topbar_title img {
-    height: 54px;
-    width: 54px;
-    position: absolute;
+    height: 40px;
+    width: 40px;
     top: 0;
     left: 0;
+    margin-right: 5px;
 }
 
 .topbar_title h1 {
-    font-weight: 300;
-    font-size: 30px;
+    font-weight: bolder;
+    font-size: 20px;
     text-transform: uppercase;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+    /* text-shadow: 2px 2px rgba(0, 0, 0, 0.6); */
     user-select: none;
+    color: #fff;
+}
+
+.topbar_title h1 span {
+    color: #000;
 }
 
 .topbar_list {
@@ -50,7 +74,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #9e3fd4;
 }
 
 .topbar_list ul {
@@ -62,27 +85,125 @@
     list-style: none;
     text-align: center;
 }
+
 .topbar_list ul li {
     width: 100%;
     height: 100%;
-    padding: 5px;
+    padding: 6px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 3px;
 }
+
 .topbar_list ul li a {
-    color: #ccc;
+    color: #333;
     text-decoration: none;
     animation: 1s ease-in-out;
-    text-transform: uppercase;
+    font-weight: bolder;
 }
 
-.topbar_list ul li a:hover {
+.topbar_list ul li:hover {
+    background-color: #ddd;
+}
+
+.topbar_list ul li:hover .topbar_list ul li a {
+    color: #f00;
+}
+
+.topbar_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.topbar_content h1 {
     color: #fff;
+    margin: 20% 20% 40% 20%;
+    text-align: center;
+    background-color: rgba(10, 10, 10, .4);
 }
-
 
 .container_main {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
+.container_main_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container_main_home_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.container_main_home_subcontent1 {
+    display: flex;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.container_main_home_subcontent2 {
+    display: flex;
+    margin: 15px 0;
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #eee;
+}
+
+.container_main_home_subcontent3 {
+    display: flex;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.container_main_home_subcontent4 {
+    display: flex;
+    margin: 15px 0;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #eee;
+}
+
+.container_main_home_subcontent1 img,
+.container_main_home_subcontent2 img,
+.container_main_home_subcontent3 img,
+.container_main_home_subcontent4 img
+ {
+    width: 400px;
+    height: 300px;
+}
+
+.container_main_home_subcontent1 .container_main_home_description,
+.container_main_home_subcontent3 .container_main_home_description {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container_main_home_subcontent2 .container_main_home_description,
+.container_main_home_subcontent4 .container_main_home_description {
+    margin-right: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
