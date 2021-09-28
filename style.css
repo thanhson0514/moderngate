@@ -153,57 +153,81 @@ body {
     display: flex;
     margin: 15px 0;
     width: 100%;
+    justify-content: center;
+    transition: all 2s;
 }
 
 .container_main_home_subcontent2 {
     display: flex;
     margin: 15px 0;
-    position: relative;
     width: 100%;
-    justify-content: space-around;
     background-color: #eee;
+    justify-content: center;
+    /* padding: 10px; */
 }
 
 .container_main_home_subcontent3 {
     display: flex;
     margin: 15px 0;
     width: 100%;
+    justify-content: center;
 }
 
 .container_main_home_subcontent4 {
     display: flex;
     margin: 15px 0;
     width: 100%;
-    justify-content: space-around;
     background-color: #eee;
+    justify-content: center;
+    /* padding: 10px; */
 }
 
 .container_main_home_subcontent1 img,
-.container_main_home_subcontent2 img,
-.container_main_home_subcontent3 img,
-.container_main_home_subcontent4 img
+.container_main_home_subcontent3 img
  {
-    width: 400px;
-    height: 300px;
+    width: 30%;
+    height: 30%;
+    border: 4px solid #e33f3f;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: all 1s;
+}
+
+.container_main_home_subcontent2 img,
+.container_main_home_subcontent4 img {
+    width: 30%;
+    height: 350px;
+    border: 4px solid #e33f3f;
+    margin: 30px 10px;
 }
 
 .container_main_home_subcontent1 .container_main_home_description,
 .container_main_home_subcontent3 .container_main_home_description {
     margin-left: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
+    font-size: 25px;
+    display: none;
+    transition: all 1s;
 }
 
 .container_main_home_subcontent2 .container_main_home_description,
 .container_main_home_subcontent4 .container_main_home_description {
-    margin-right: 15px;
+    display: none;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
+    font-size: 25px;
+    width: 75%;
+    transition: all 1s;
+    text-align: center;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translate(100%, 0);
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(-100%, 0);
+    }
 }
